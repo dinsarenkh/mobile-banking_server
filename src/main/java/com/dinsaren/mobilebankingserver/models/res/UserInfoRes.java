@@ -1,4 +1,4 @@
-package com.dinsaren.mobilebankingserver.models.req;
+package com.dinsaren.mobilebankingserver.models.res;
 
 import com.dinsaren.mobilebankingserver.models.User;
 import com.dinsaren.mobilebankingserver.models.UserAccount;

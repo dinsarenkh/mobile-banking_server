@@ -4,7 +4,7 @@ import com.dinsaren.mobilebankingserver.constants.Constants;
 import com.dinsaren.mobilebankingserver.models.User;
 import com.dinsaren.mobilebankingserver.models.UserAccount;
 import com.dinsaren.mobilebankingserver.models.req.UserInfoReq;
-import com.dinsaren.mobilebankingserver.models.req.UserInfoRes;
+import com.dinsaren.mobilebankingserver.models.res.UserInfoRes;
 import com.dinsaren.mobilebankingserver.payload.response.MessageRes;
 import com.dinsaren.mobilebankingserver.repository.UserAccountRepository;
 import com.dinsaren.mobilebankingserver.repository.UserRepository;
