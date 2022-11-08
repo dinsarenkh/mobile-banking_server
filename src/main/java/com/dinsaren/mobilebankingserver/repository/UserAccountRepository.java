@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface UserAccountRepository extends JpaRepository<UserAccount, Integer> {
     List<UserAccount> findAllByUserAccountIdAndStatus(String userAccountId, String status);
+    UserAccount findByAccountNumberAndStatus(String accountNo, String status);
 }

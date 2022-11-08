@@ -60,4 +60,13 @@ public class MessageRes {
     public void setData(Object data) {
         this.data = data;
     }
+
+	@Override
+	public String toString() {
+		return "MessageRes{" +
+				"message='" + message + '\'' +
+				", code='" + code + '\'' +
+				", data=" + data +
+				'}';
+	}
 }

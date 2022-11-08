@@ -29,6 +29,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -129,33 +130,28 @@ public class AuthController {
             User user = new User(req.getUsername(), req.getEmail(), encoder.encode(req.getPassword()), req.getPhoneNumber());
             Set<Role> roles = new HashSet<>();
             Role userRole = roleRepository.findByName(UserRole.ROLE_USER).orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+            String userAccountId = UUID.randomUUID().toString();
             roles.add(userRole);
             user.setRoles(roles);
             user.setDob(req.getDob());
             user.setFirstName(req.getFirstName());
             user.setLastName(req.getLastName());
             user.setNationalId(req.getNationalId());
-            user.setUserAccountId(UUID.randomUUID().toString());
+            user.setUserAccountId(userAccountId);
             user.setStatus(Constants.ACTIVE_STATUS);
             userRepository.save(user);
             UserAccount userAccount = new UserAccount();
             userAccount.setAccountCcy("USD");
-            userAccount.setAccountNumber(generateAccountNumber());
+            int int_random = ThreadLocalRandom.current().nextInt();
+            String accountNumber = "" + int_random;
+            userAccount.setAccountNumber(accountNumber.replace("-", ""));
             userAccount.setCreateAt(new Date());
-            userAccount.setCreateBy(user.getUserAccountId());
-            userAccount.setUserAccountId(user.getUserAccountId());
+            userAccount.setCreateBy(userAccountId);
+            userAccount.setUserAccountId(userAccountId);
             userAccount.setStatus(Constants.ACTIVE_STATUS);
             userAccount.setAccountDefault("Y");
             userAccount.setTotalBalance(10000.00);
             userAccountRepository.save(userAccount);
-//            OtpLog otpLog = new OtpLog();
-////            otpLog.setToken(req.getPhoneNumber() + req.getDeviceId());
-////            otpLog.setSendTo(req.getPhoneNumber());
-////            otpLog.setStatus(Constants.ACTIVE_STATUS);
-////            Date date = new Date(System.currentTimeMillis());
-////            otpLog.setCreateAt(date);
-////            otpLog.setCreateBy(req.getPhoneNumber());
-////            otpLogRepository.save(otpLog);
             messageRes.setMessageSuccess("User Open Account successfully!");
             return new ResponseEntity<>(messageRes, HttpStatus.OK);
         } catch (Throwable e) {
@@ -183,20 +179,10 @@ public class AuthController {
     }
 
     public static void main(String[] args) {
-        Random rand = new Random();
-        String card = "00";
-        for (int i = 0; i < 10; i++) {
-            int n = rand.nextInt(6) + 0;
-            card += Integer.toString(n);
-        }
-        for (int i = 0; i < 12; i++) {
-            if (i % 4 == 0)
-                System.out.print("");
-            System.out.print(card.charAt(i));
-        }
+        System.out.println(generateAccountNumber());
     }
 
-    private String generateAccountNumber() {
+    private static String generateAccountNumber() {
         String accountNumber = "";
         try {
             Random rand = new Random();
