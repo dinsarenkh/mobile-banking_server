@@ -72,10 +72,6 @@ public class AccountController {
     public ResponseEntity<MessageRes> create(@RequestBody UserAccount req) {
         messageRes = new MessageRes();
         try {
-//            if (!req.getAccountType().equals(Constants.TERM_DEPOSIT_ACCOUNT) || !req.getAccountType().equals(Constants.SAVING_ACCOUNT)) {
-//                messageRes.setMessageSuccess("Invalid Account Type");
-//                return new ResponseEntity<>(messageRes, HttpStatus.BAD_REQUEST);
-//            }
             log.info("Intercept get user info req {}", req);
             User user = authenticationUtilService.checkUser();
             req.setAccountCcy("USD");
@@ -89,6 +85,7 @@ public class AccountController {
             req.setStatus(Constants.ACTIVE_STATUS);
             req.setAccountDefault("N");
             req.setTotalBalance(10000.00);
+            req.setId(0);
             userAccountRepository.save(req);
             messageRes.setMessageSuccess(null);
         } catch (Throwable e) {
