@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1ca1dc9-6b5a-40d5-a9c5-300be10d0df0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bbuapp.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/MobileBankingServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/advice/ErrorMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/advice/TokenControllerAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/constants/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/controllers/rest/AccountController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/controllers/rest/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/controllers/rest/CategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/controllers/rest/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/exception/TokenRefreshException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/OtpLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/RefreshToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/UserAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/req/UserInfoReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/res/CategoryRes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/models/res/UserInfoRes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/payload/request/LogOutReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/payload/request/LoginReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/payload/request/RegisterReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/payload/request/TokenRefreshReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/payload/response/JwtRes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/payload/response/MessageRes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/payload/response/TokenRefreshRes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/repository/OtpLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/repository/RefreshTokenRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/repository/UserAccountRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/OpenApiConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/jwt/AuthEntryPointJwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/jwt/AuthTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/jwt/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/services/RefreshTokenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/services/SlideService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/services/UserDetailsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/services/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/security/services/impl/SlideServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/services/AuthenticationUtilService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dinsaren/mobilebankingserver/services/OtpService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dinsaren/mobilebankingserver/MobileBankingServerApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IUixc8nejkeN66TY8qg4XgS3vg" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/saren.din/Desktop/Project BBU APP/mobile-banking_server",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="MobileBankingServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mobile-banking-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dinsaren.mobilebankingserver.MobileBankingServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1ca1dc9-6b5a-40d5-a9c5-300be10d0df0" name="Changes" comment="" />
+      <created>1670242827293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670242827293</updated>
+      <workItem from="1670242829149" duration="1076000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
